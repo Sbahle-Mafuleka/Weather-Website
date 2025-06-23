@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAILY-WEATHER</title>
+  </head>
+  <body>
+    <h2>Daily-Weather</h2>
+    <form class="searchForm">
+      <input
+        type="search"
+        placeholder="Enter a city.."
+        required
+        id="nameCity"
+      />
+      <input type="submit" value="search" id="submitCity" />
+    </form>
+    <br />
+
+    <h2 id="Current-Temp">22&deg C</h2>
+    <h1 id="city">Durban</h1>
+    <div id="day">Monday: <span> 14:49 ,scattered clouds</span></div>
+    <div id="humidity">humidity: 66%,wind:3.13km/h</div>
+
+    <br />
+    <div id="forecast"></div>
+
+    <br />
+    <footer>
+      coded by <strong>Sbahle Mafuleka</strong> and hosted on <a>netlify</a>
+    </footer>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

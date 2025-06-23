@@ -1,0 +1,152 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body and container */
+body {
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Search form */
+.searchForm {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.searchForm input[type="search"] {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.searchForm input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchForm input[type="submit"]:hover {
+  background-color: #d35400;
+}
+
+/* Current weather section */
+#Current-Temp {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#city {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#day {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#humidity {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Weather icon */
+#main-icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+/* Forecast container */
+#forecast {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each day in forecast */
+.forecast-day {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 120px;
+  text-align: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.forecast-day:hover {
+  transform: translateY(-5px);
+}
+
+.forecast-day .day {
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.temp {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #eee;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
